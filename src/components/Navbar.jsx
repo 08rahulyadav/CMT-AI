@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -16,7 +17,7 @@ export default function Navbar() {
         {/* Menu */}
         <nav className="hidden md:flex gap-8 font-medium text-gray-700">
           <a href="#home" className="hover:text-blue-700">Home</a>
-          <a href="/Blog" className="hover:text-blue-700">Blog</a>
+          <Link to="/blogs" className="hover:text-blue-700">Blog</Link>
           <a href="#services" className="hover:text-blue-700">Service</a>
           <a href="#contact" className="hover:text-blue-700">Contact</a>
         </nav>
