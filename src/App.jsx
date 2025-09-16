@@ -1,15 +1,18 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BlogList from "./pages/BlogList";
+import HomePage from "./pages/HomePage";
 import BlogDetail from "./pages/BlogDetail";
 
-export default function App() {
+function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/blogs" element={<BlogList />} />
+        {/* Home page */}
+        <Route path="/" element={<HomePage />} />
+        {/* Blog detail page */}
         <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
     </Router>
   );
 }
+
+export default App;
