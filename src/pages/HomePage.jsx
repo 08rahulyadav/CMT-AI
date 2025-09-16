@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import HomeSection from "../components/HomeSection";
-// import BlogList from "../components/BlogList";
 import AboutUs from "../components/AboutUs";
 import CurrentSituation from "../components/CurrentSituation";
 import Footer from "../components/Footer";
@@ -17,30 +16,25 @@ import TeamSection from "../components/TeamSection";
 import Testimonials from "../components/Testimonials";
 import CallToAction from "../components/CallToAction";
 
-
 const HomePage = () => {
   return (
     <>
       <Navbar />
-      
       <HomeSection />
-       <AboutUs />
-       <CurrentSituation/>
-       <DuraSection/>
-       <FeatureCards/>
-       <HealthBenefits/>
-      <CompetitiveAdvantage/>
-      <StepsSection/>
-      <InnovationSection/>
-      <MilestoneSection/>
-      <SuccessStory/>
-      <TeamSection/>
-      <Testimonials/>
-      <CallToAction/>
-      
-      
-      {/* <BlogList /> */}
-      <Footer/>
+      <AboutUs />
+      <CurrentSituation />
+      <DuraSection />
+      <FeatureCards />
+      <HealthBenefits />
+      <CompetitiveAdvantage />
+      <StepsSection />
+      <InnovationSection />
+      <MilestoneSection />
+      <SuccessStory />
+      <TeamSection />
+      <Testimonials />
+      <CallToAction />
+      <Footer />
     </>
   );
 };

@@ -1,11 +1,9 @@
-// File: MilestoneSection.jsx
 import React from "react";
 import { FaTrophy } from "react-icons/fa";
 
 export default function MilestoneSection() {
   return (
     <section className="bg-[#dce6ef] py-16 px-6">
-      {/* Heading (Left Aligned) */}
       <div className="mb-10">
         <h2 className="text-3xl font-bold flex items-center gap-2">
           <FaTrophy className="text-yellow-500" />
@@ -14,7 +12,6 @@ export default function MilestoneSection() {
         </h2>
       </div>
 
-      {/* Top Descriptions */}
       <div className="flex justify-between max-w-5xl mx-auto mb-12">
         <div className="w-1/2 pr-6">
           <h3 className="text-blue-900 font-bold">
@@ -36,7 +33,6 @@ export default function MilestoneSection() {
         </div>
       </div>
 
-      {/* Years with Arrows (with your given URLs) */}
       <div className="flex justify-center items-center gap-6 mb-12">
         <img src="https://www.empireblue.in/_next/image?url=%2F2026.png&w=128&q=75" alt="2026" className="w-20" />
         <img src="https://www.empireblue.in/_next/image?url=%2Farrow.png&w=48&q=75" alt="arrow" className="w-6" />
@@ -49,7 +45,6 @@ export default function MilestoneSection() {
         <img src="https://www.empireblue.in/_next/image?url=%2F2030.png&w=128&q=75" alt="2030" className="w-20" />
       </div>
 
-      {/* Bottom Descriptions */}
       <div className="flex justify-between max-w-6xl mx-auto">
         <div className="w-1/3 pr-4 text-left">
           <h3 className="text-blue-900 font-bold">

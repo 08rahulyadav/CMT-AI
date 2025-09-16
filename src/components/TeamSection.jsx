@@ -1,4 +1,3 @@
-// File: TeamSection.jsx
 import React from "react";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
 
@@ -34,7 +33,6 @@ const leadership = [
 export default function TeamSection() {
   return (
     <section className="bg-white py-16 px-6 text-center">
-      {/* Heading */}
       <h2 className="text-4xl font-bold mb-12">
         <span className="text-blue-900">Meet Our </span>
         <span className="bg-gradient-to-r from-blue-600 to-green-500 bg-clip-text text-transparent">
@@ -43,9 +41,7 @@ export default function TeamSection() {
         <span className="text-blue-900">Team</span>
       </h2>
 
-      {/* Founder Section */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-16 max-w-6xl mx-auto">
-        {/* Image */}
         <div className="bg-white rounded-2xl shadow-lg p-4 w-72">
           <img
             src={founder.img}
@@ -58,7 +54,6 @@ export default function TeamSection() {
           </div>
         </div>
 
-        {/* Text */}
         <div className="max-w-lg text-left">
           <h3 className="font-semibold text-lg text-blue-900 mb-2">
             About the Founder
@@ -78,7 +73,6 @@ export default function TeamSection() {
         </div>
       </div>
 
-      {/* Leadership Section */}
       <h3 className="text-2xl font-semibold text-blue-900 mb-8">
         Leadership Team
       </h3>

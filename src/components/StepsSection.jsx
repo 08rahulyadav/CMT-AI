@@ -22,21 +22,18 @@ export default function StepsSection() {
   return (
     <section className="bg-[#d9e3ec] py-12">
       <div className="max-w-6xl mx-auto">
-        {/* Number line */}
         <div className="flex justify-between items-center mb-12 pl-6">
           {[1, 2, 3, 4, 5, 6].map((num, index, arr) => (
             <div key={num} className="flex items-center w-full">
-              {/* Circle */}
               <div
                 className="flex items-center justify-center w-10 h-10 rounded-full font-bold z-10 bg-white"
                 style={{
-                  border: "2px solid #1d4ed8", // same blue as HealthBenefits
+                  border: "2px solid #1d4ed8",
                   color: "#1d4ed8",
                 }}
               >
                 {num}
               </div>
-              {/* Line (except last one) */}
               {index < arr.length - 1 && (
                 <div
                   className="flex-1 h-[2px] ml-2 mr-2"
@@ -47,7 +44,6 @@ export default function StepsSection() {
           ))}
         </div>
 
-        {/* 3 Steps Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           {steps.map((step, i) => (
             <div key={i} className="px-6">

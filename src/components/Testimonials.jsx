@@ -5,7 +5,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 
-// Dummy Data
 const testimonials = [
   {
     text: "Since switching to Newtro-X, my energy levels have improved significantly. The mineral content is perfect for post-workout hydration. My gym members love it!",
@@ -47,19 +46,16 @@ export default function TestimonialSlider() {
           {testimonials.map((t, i) => (
             <SwiperSlide key={i}>
               <div className="flex flex-col items-center gap-5 py-10 px-8 text-center">
-                {/* Stars */}
                 <div className="flex text-yellow-400 text-lg">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} />
                   ))}
                 </div>
 
-                {/* Review Text */}
                 <p className="italic text-gray-700 max-w-xl leading-relaxed text-sm">
                   “{t.text}”
                 </p>
 
-                {/* Profile */}
                 <div className="flex flex-col items-center mt-3">
                   <div className="bg-blue-800 text-white w-12 h-12 flex items-center justify-center rounded-full font-bold text-sm">
                     {t.initials}
@@ -74,19 +70,16 @@ export default function TestimonialSlider() {
             </SwiperSlide>
           ))}
 
-          {/* Left Arrow */}
           <div className="swiper-prev absolute top-1/2 left-4 -translate-y-1/2 bg-white shadow-md w-8 h-8 flex items-center justify-center rounded-full cursor-pointer z-10">
             <FaChevronLeft className="text-gray-600 text-sm" />
           </div>
 
-          {/* Right Arrow */}
           <div className="swiper-next absolute top-1/2 right-4 -translate-y-1/2 bg-white shadow-md w-8 h-8 flex items-center justify-center rounded-full cursor-pointer z-10">
             <FaChevronRight className="text-gray-600 text-sm" />
           </div>
         </Swiper>
       </div>
 
-      {/* Bottom Stats */}
       <div className="max-w-2xl mx-auto mt-10 flex justify-around items-center bg-white shadow-md rounded-xl py-4 px-6 text-center">
         <div>
           <p className="text-blue-800 font-bold text-lg">4.9/5</p>
